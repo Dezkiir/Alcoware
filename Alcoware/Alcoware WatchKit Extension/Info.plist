@@ -2,6 +2,12 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSHealthClinicalHealthRecordsShareUsageDescription</key>
+	<string>Alcoware requires access to read Health Records</string>
+	<key>NSHealthShareUsageDescription</key>
+	<string>Alcoware requires access to share Health Records</string>
+	<key>NSHealthUpdateUsageDescription</key>
+	<string>Alcoware requires access to write Health Records</string>
 	<key>NSExtension</key>
 	<dict>
 		<key>NSExtensionAttributes</key>

@@ -1,15 +1,16 @@
 //
 //  ContentView.swift
-//  Alcoware WatchKit Extension
+//  Alcoware
 //
-//  Created by Dylan Deakin on 16/02/2022.
+//  Created by Dylan Deakin on 29/03/2022.
 //
 
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Repository()
+        Text("Hello, world!")
+            .padding()
     }
 }
 
