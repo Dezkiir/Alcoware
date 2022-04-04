@@ -21,16 +21,18 @@ struct DetailView: View {
     }
     
     var body: some View {
-        DrinkChart(
-            values: viewModel.stats.map {viewModel.value(from: $0.stat).value },
-            labels: viewModel.stats.map {viewModel.value(from: $0.stat).desc },
-            xAxisLabels: viewModel.stats.map { DetailViewModel.dateFormatter.string(from: $0.date)}
-        )
-        
-        List(viewModel.stats) { stat in
-            VStack(alignment: .leading) {
-                Text(viewModel.value(from: stat.stat).desc)
-                Text(stat.date, style: .date).opacity(0.5)
+        ScrollView {
+            DrinkChart(
+                values: viewModel.stats.map {viewModel.value(from: $0.stat).value },
+                labels: viewModel.stats.map {viewModel.value(from: $0.stat).desc },
+                xAxisLabels: viewModel.stats.map { DetailViewModel.dateFormatter.string(from: $0.date)}
+            ).scaledToFit()
+            
+            List(viewModel.stats) { stat in
+                VStack(alignment: .leading) {
+                    Text(viewModel.value(from: stat.stat).desc)
+                    Text(stat.date, style: .date).opacity(0.5)
+                }
             }
         }
     }

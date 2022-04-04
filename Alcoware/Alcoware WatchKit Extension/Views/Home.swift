@@ -8,8 +8,29 @@
 import SwiftUI
 
 struct Home: View {
+    // HealthKit data to dynamically adjust levels goes here
+    let values = [3, 11, 3, 12, 8, 10, 9]
+    let labels = ["3", "11", "3", "12", "8", "10", "9"]
+    let xAxisLabels = ["M", "T", "W", "T", "F", "S", "S"]
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ScrollView {
+            DrinkChart(values: values, labels: labels, xAxisLabels: xAxisLabels).scaledToFit()
+            VStack {
+                //Navigate to Drink Input
+                NavigationLink(destination: DrinkInput()) {
+                    Text("Drink Input")
+                }
+                //Navigate to Repository
+                NavigationLink(destination: Repository()) {
+                    Text("Repository")
+                }
+                //Navigate to Taxi
+                NavigationLink(destination: Taxi()) {
+                    Text("Taxi")
+                }
+            }
+        }
     }
 }
 

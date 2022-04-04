@@ -46,9 +46,9 @@ struct DrinkChart: View {
     struct Drink_Chart_Previews: PreviewProvider {
         static var previews: some View {
             // HealthKit data to dynamically adjust levels goes here
-            let values = [213, 211, 443, 3, 3, 342, 22]
-            let labels = ["213", "211", "443", "3", "3", "342", "22"]
-            let xAxisLabels = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+            let values = [3, 11, 3, 12, 8, 10, 9]
+            let labels = ["3", "11", "3", "12", "8", "10", "9"]
+            let xAxisLabels = ["M", "T", "W", "T", "F", "S", "S"]
             DrinkChart(values: values, labels: labels, xAxisLabels: xAxisLabels)
         }
     }
