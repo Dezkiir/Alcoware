@@ -19,7 +19,7 @@ struct AddNewDrink: View {
     var body: some View {
         VStack(spacing: 15) {
             TextField("New Drink...", text: $drinkType)
-//            TextField("Total number of units", int: $units)
+            TextField("Total number of units", int: $units)
         }
         
         Button(action: addDrink) {
