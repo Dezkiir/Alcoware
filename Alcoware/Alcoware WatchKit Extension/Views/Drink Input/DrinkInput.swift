@@ -30,7 +30,6 @@ struct DrinkInput: View {
                         .frame(maxWidth: .infinity)
                         .frame(height: 60)
                         .contentShape(Rectangle())
-                        //.background(LinearGradient(gradient: Gradient(colors: [Color.Color]), startPoint: .top, endPoint: .bottom))
                         .cornerRadius(5)
                 }
             }
