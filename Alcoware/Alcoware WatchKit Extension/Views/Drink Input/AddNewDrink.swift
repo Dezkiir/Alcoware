@@ -10,7 +10,7 @@ import SwiftUI
 struct AddNewDrink: View {
     
     @State private var drinkType = ""
-    //@State var units:Int64
+    @State var units:Int64
     
     @Environment(\.managedObjectContext) var context
     @Environment(\.presentationMode) var presentationMode
