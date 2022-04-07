@@ -36,7 +36,7 @@ struct AddNewDrink: View {
         let drink = Drink(context: context)
         drink.drinkType = drinkType
         drink.dateDrank = Date()
-//        drink.units = units
+        drink.units = units
         
         do {
             try context.save()
@@ -45,7 +45,6 @@ struct AddNewDrink: View {
             print(err.localizedDescription)
             }
     }
-    //.navigationTitle("Add New Drink")
 }
 
  
