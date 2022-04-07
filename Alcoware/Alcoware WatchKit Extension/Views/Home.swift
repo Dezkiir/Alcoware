@@ -8,10 +8,6 @@
 import SwiftUI
 
 struct Home: View {
-    // HealthKit data to dynamically adjust levels goes here
-    let values = [3, 11, 3, 12, 8, 10, 9]
-    let labels = ["3", "11", "3", "12", "8", "10", "9"]
-    let xAxisLabels = ["M", "T", "W", "T", "F", "S", "S"]
     
     var body: some View {
         ScrollView {
